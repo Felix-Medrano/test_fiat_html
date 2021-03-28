@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Cotizador Fiat</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <!-- Estilos Propios -->
+    <script
+      src="https://kit.fontawesome.com/d76853896d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="display">
+      <div class="fondoa"></div>
+      <div class="fondor"></div>
+      <header>
+        <div class="contenedor">
+          <div class="col10">
+            <img src="img/fiat.png" class="logo" />
+          </div>
+          <div class="menu">
+            <a href="#">MODELOS</a>
+            <a href="#">PRUEBA DE MANEJO</a>
+            <a href="#">COTIZAR</a>
+            <a href="#">PROMOCIONES</a>
+            <a href="#">DISTRIBUIDORES</a>
+          </div>
+          <div class="col10"></div>
+          <a href="#" class="hamb">
+            <i class="fas fa-bars"></i>
+          </a>
+        </div>
+      </header>
+      <main>
+        <!-- 
+Empieza Seccion de Encabezado
+-->
+
+        <section id="Encabezado">
+          <div class="contenedor">
+            <h6>COTIZADOR</h6>
+            <h4>CITADINO, AVENTURERO, DEPORTIVO</h4>
+            <h2>Elige el tuyo</h2>
+            <img src="img/fiatCar1.png" />
+          </div>
+        </section>
+
+        <!-- 
+  Empieza Seccion de Datos del auto
+-->
+
+        <section id="Datos">
+          <div class="row">
+            <div class="lista">
+              <p>MODELO</p>
+              <select name="modelo" id="modelo">
+                <option value="">Selecciona</option>
+                <option value="fiat1">Fiat 1</option>
+                <option value="fiat2">Fiat 2</option>
+                <option value="fiat3">Fiat 3</option>
+              </select>
+            </div>
+            <div class="lista">
+              <p>ESTADO</p>
+              <select name="estado" id="estado">
+                <option value="">Selecciona</option>
+                <option value="coah">COAHUILA</option>
+                <option value="nleon">NUEVO LEON</option>
+                <option value="dgo">DURANGO</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="lista">
+              <p>VERSION</p>
+              <select name="version" id="version">
+                <option value="">Selecciona</option>
+                <option value="v4">V4</option>
+                <option value="v6">V6</option>
+                <option value="v8">V8</option>
+              </select>
+            </div>
+            <div class="lista">
+              <p>DISTRIBUIDOR</p>
+              <select name="distribuidor" id="distribuidor">
+                <option value="">Selecciona</option>
+                <option value="fcoah">FIAT COAHUILA</option>
+                <option value="fnleon">FIAT NUEVO LEON</option>
+                <option value="fdgo">FIAT DURANGO</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+      Empieza seccion de Datos personales
+    -->
+
+        <section id="Datospersonales">
+          <div class="titulo">
+            <h2>Datos personales</h2>
+            <h4>ESCRIBE TUS DATOS PERSONALES</h4>
+          </div>
+          <form action="">
+            <div class="col33 datos colcel100">
+              <p>NOMBRE (S)</p>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="ESCRIBE TU NOBRE"
+              />
+              <p>EMAIL</p>
+              <input
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="CORREO@EMAIL.COM.MX"
+              />
+            </div>
+            <div class="col33 datos colcel100">
+              <p>APELLIDO PATERNO</p>
+              <input
+                type="text"
+                name="apaterno"
+                id="apaterno"
+                placeholder="ESCRIBE TU APELLIDO"
+              />
+              <p>TELEFONO</p>
+              <input
+                type="text"
+                name="telefono"
+                id="telefono"
+                placeholder="123-456-78-90"
+              />
+            </div>
+            <div class="col33 datos colcel100">
+              <p>APELLIDO MATERNO</p>
+              <input
+                type="text"
+                name="amaterno"
+                id="amaterno"
+                placeholder="ESCRIBE TU APELLIDO"
+              />
+            </div>
+            <p class="separador">DESEO SER CONTACTADO POR</p>
+            <div class="opciones">
+              <button class="col33">
+                <i class="fas fa-phone-alt"></i>TELEFONO
+              </button>
+              <button class="col33">
+                <i class="fas fa-envelope"></i>EMAIL
+              </button>
+              <button class="col33">AMBOS</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- 
+          Seccion de Formas de Pago
+       -->
+
+        <section id="Formaspago">
+          <div class="titulo">
+            <h2>Formas de pago</h2>
+            <h4>PERSONALIZA TU COTIZACIÓN</h4>
+          </div>
+          <p class="add">ELIJE TU TIPO DE PAGO</p>
+          <div class="row">
+            <button class="col50">CONTADO</button>
+            <button class="col50">CREDITO</button>
+          </div>
+          <div class="row mobilrow">
+            <div class="col50 colcel100 sder">
+              <p>CANTIDAD DE ENGANCHE</p>
+              <input
+                type="text"
+                name="enganche"
+                id="enganche"
+                placeholder="$0.00"
+              />
+            </div>
+            <div class="col50 colcel100 sizq">
+              <p>PLAZO</p>
+              <select name="plazo" id="plazo">
+                <option value="op1">6 MESES</option>
+                <option value="op2">12 MESES</option>
+                <option value="op3">24 MESES</option>
+                <option value="op4">72 MESES</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+          Seccion Comentarios
+ -->
+
+        <section id="Comentarios">
+          <div class="titulo">
+            <h2>Comentarios</h2>
+            <h4>NOS IMPORTAN TUS COMENTARIOS</h4>
+          </div>
+          <div class="contenedor">
+            <p>¿DUDAS? ¿COMENTARIOS?</p>
+            <textarea
+              name="comentarios"
+              id="comentarios"
+              cols="30"
+              rows="10"
+              placeholder="ESCRIBENOS"
+            ></textarea>
+          </div>
+          <div class="row">
+            <div class="check col50 colcel100">
+              <label
+                ><input type="checkbox" name="acepto" id="acepto" />
+                <span>
+                  He leído y acepto el <a href="#">aviso de privacidad</a>
+                </span>
+              </label>
+              <label
+                ><input type="checkbox" name="nospam" id="nospam" /><span>
+                  No deseo recibir promociones
+                </span>
+              </label>
+            </div>
+            <div class="acept col50 colcel100">
+              <button type="submit">ENVIAR</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>

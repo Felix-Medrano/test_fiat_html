@@ -1,0 +1,561 @@
+/* 
+Estilos de Etiquetas
+*/
+
+* {
+  z-index: 1;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  font-family: "Playfair Display", serif;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+.fondoa {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(73, 87, 209);
+  z-index: 0;
+}
+.fondor {
+  position: fixed;
+  display: block;
+  top: 400px;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: red;
+  transform: rotate(-10deg);
+  z-index: 0;
+}
+
+body {
+  width: 100%;
+}
+
+body .display {
+  margin: 0 25%;
+}
+
+div {
+  display: block;
+}
+
+select,
+input,
+textarea {
+  resize: none;
+  border-color: red;
+  height: 20px;
+}
+
+h2 {
+  font-style: italic;
+  margin: 0;
+  font-weight: 900;
+  font-size: 30px;
+  color: red;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  margin-bottom: 25px;
+}
+
+button {
+  padding: 0;
+  height: 30px;
+  font-size: 8px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  border: 1px solid red;
+  background-color: white;
+}
+
+button:hover,
+button.seleccionado {
+  color: white;
+  background-color: red;
+}
+
+input,
+button,
+select {
+  height: 25px;
+}
+
+input {
+  border: 1px solid red;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* 
+Estilos de header
+*/
+
+header {
+  z-index: 2;
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header .contenedor.col10 {
+  width: 10%;
+  height: 50px;
+  display: flex;
+}
+
+header .contenedor .menu.open {
+  transform: translateX(-10%);
+}
+
+header .contenedor .menu {
+  height: 50px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10px;
+}
+
+header .contenedor .hamb{
+  display: none;
+}
+
+header .contenedor {
+  display: flex;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 25%;
+  align-items: center;
+}
+
+header .contenedor .col10 img {
+  position: relative;
+  top: 20px;
+  height: 50px;
+}
+header .menu a {
+  font-weight: bolder;
+  color: black;
+  font-size: 12px;
+}
+
+/* 
+Estilos de main
+*/
+
+main {
+  background-color: white;
+  height: auto;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+/* 
+Estilos de #Encabezado
+*/
+
+#Encabezado {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  top: 50px;
+  height: auto;
+  background-color: rgb(73, 87, 209);
+}
+
+#Encabezado h6 {
+  margin: 0;
+  font-size: 7px;
+  color: wheat;
+  letter-spacing: 3px;
+  padding-top: 15px;
+}
+#Encabezado h4 {
+  margin: 0;
+  font-size: 12px;
+  color: black;
+  letter-spacing: 1px;
+  padding-top: 15px;
+}
+#Encabezado h2 {
+  margin: 0;
+  font-size: 70px;
+  color: white;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  font-style: italic;
+  /* padding-bottom: 80px; */
+}
+
+#Encabezado img {
+  /* display: block; */
+  position: relative;
+  width: 300px;
+  top: -15px;
+}
+
+#Encabezado .contenedor {
+  height: 220px;
+}
+
+/* 
+Estilos de #Datos (datos de auto)
+*/
+
+#Datos {
+  background-color: white;
+  display: flex;
+  padding: 0 5%;
+  padding-top: 120px;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+#Datos .row {
+  display: block;
+  height: auto;
+  width: 50%;
+}
+
+#Datos .row .lista {
+  padding: 0 5%;
+  margin-bottom: 20px;
+}
+
+#Datos select {
+  width: 100%;
+}
+
+/* 
+Estilos de #Datospersonales
+*/
+
+#Datospersonales {
+  padding: 0 5%;
+  padding-top: 15px;
+  text-align: left;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+#Datospersonales p {
+  margin: 0;
+}
+
+.titulo {
+  padding: 0 5%;
+  text-align: center;
+}
+
+#Datospersonales .separador {
+  padding: 0 2.5%;
+}
+
+#Datospersonales form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Datospersonales .datos {
+  position: relative;
+  display: block;
+  padding: 0 2.5%;
+}
+
+#Datospersonales .opciones {
+  width: 100%;
+  display: flex;
+  padding: 0 2.5%;
+}
+
+#Datospersonales .opciones p {
+  width: 100%;
+  display: inline-block;
+}
+
+#Datospersonales .opciones button i {
+  padding-right: 20px;
+}
+
+/* 
+Estiloz Formas de Pago
+*/
+
+#Formaspago {
+  margin: 0 5%;
+  padding-top: 35px;
+  text-align: left;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+#Formaspago select {
+  width: 100%;
+}
+
+#Formaspago .titulo {
+  margin: 0 10%;
+}
+
+#Formaspago .row {
+  width: 100%;
+  display: flex;
+  padding: 0 10%;
+  margin-bottom: 20px;
+}
+
+#Formaspago p {
+  width: auto;
+  font-weight: 500;
+  letter-spacing: 2px;
+  display: block;
+}
+
+#Formaspago p.add {
+  margin: 0 10%;
+}
+
+/* 
+Estilos Comentarios
+*/
+
+#Comentarios {
+  margin: 0 5%;
+  text-align: left;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+#Comentarios .contenedor {
+  padding: 0 5%;
+}
+
+#Comentarios .row input {
+  height: 15px;
+  width: 15px;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#Comentarios textarea {
+  width: 100%;
+  height: 150px;
+}
+
+#Comentarios .row label {
+  display: inline-block;
+  padding: 0 10px 10px 0;
+  white-space: nowrap;
+}
+
+#Comentarios .row span {
+  vertical-align: middle;
+}
+
+#Comentarios .row {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+}
+
+#Comentarios .check {
+  width: 100%;
+  padding-top: 5%;
+}
+
+#Comentarios .acept button {
+  margin: 20%;
+  width: 100px;
+}
+
+/* 
+Clases Generales
+*/
+
+.contendor {
+  height: auto;
+  width: 100%;
+}
+
+.col33 {
+  width: 33.33%;
+}
+
+.col50 {
+  width: 50%;
+}
+
+.sder {
+  margin-right: 2.5%;
+}
+.sizq {
+  margin-left: 2.5%;
+}
+
+@media (max-width: 1023px) {
+  header {
+    width: 100%;
+  }
+
+  body .display {
+    margin: 0 2.5%;
+  }
+
+  header .contenedor {
+    width: 100%;
+    padding: 0 2.5%;
+  }
+  header .contenedor .menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fondor {
+    top: 250px;
+  }
+
+  body .display {
+    margin: 0;
+  }
+
+  header .contendor {
+    padding: 0;
+  }
+
+  header .contenedor .menu {
+    justify-content: unset;
+    text-align: unset;
+    position: fixed;
+    width: auto;
+    height: 100%;
+    padding: 80px 0;
+    background-color: white;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in;
+    transform: translateX(-110%);
+  }
+
+header .contenedor .hamb{
+  display: block;
+}
+
+  header .contenedor .menu a {
+    font-size: 15px;
+    margin: 15px 0;
+    padding: 0 15px;
+  }
+
+  header .contenedor .col10 img {
+    height: 40px;
+  }
+
+  main {
+    margin-bottom: 50px;
+  }
+
+  #Encabezado .contenedor {
+    height: 190px;
+  }
+
+  #Encabezado .contenedor h2 {
+    padding-top: 5px;
+    font-size: 40px;
+  }
+
+  #Encabezado .contenedor img {
+    top: 1px;
+  }
+
+  #Datos,
+  #Datospersonales form {
+    display: block;
+  }
+
+  #Datos .row,
+  #Datospersonales form {
+    width: 100%;
+  }
+
+  #Datospersonales .titulo,
+  #Formaspago .titulo {
+    padding: 0;
+    margin: 0;
+  }
+
+  #Datospersonales .titulo h2,
+  #Formaspago .titulo h2 {
+    width: 100%;
+    font-size: 30px;
+  }
+  #Datospersonales form button {
+    text-align: center;
+    word-wrap: normal;
+  }
+
+  #Formaspago .row {
+    padding: 0;
+  }
+
+  #Formaspago .mobilrow {
+    display: block;
+    width: 100%;
+  }
+
+  #Comentarios .contenedor {
+    padding: 0;
+  }
+
+  #Comentarios .row {
+    padding: 0;
+  }
+
+  #Comentarios .row {
+    display: block;
+    width: 100%;
+  }
+
+  #Comentarios .row .acept {
+    display: flex;
+    justify-content: center;
+  }
+
+  #Comentarios .row .acept button {
+    margin: 20px 0 20px 0;
+    justify-content: center;
+  }
+  .sder,
+  .sizq {
+    margin: 0;
+  }
+  .colcel100 {
+    width: 100%;
+  }
+}
